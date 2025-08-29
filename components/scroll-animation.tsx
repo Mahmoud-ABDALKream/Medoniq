@@ -1,86 +1,56 @@
 "use client"
 
+import { motion, useAnimation, useInView, useReducedMotion } from "framer-motion"
 import { useEffect, useRef, type ReactNode } from "react"
 
 interface ScrollAnimationProps {
   children: ReactNode
   className?: string
   delay?: number
-  direction?: "up" | "down" | "left" | "right" | "fade" | "scale" | "rotate" | "bounce"
   duration?: number
-  stagger?: boolean
+  once?: boolean
+  variants?: {
+    hidden: Record<string, unknown>
+    visible: Record<string, unknown>
+  }
 }
 
 export function ScrollAnimation({
   children,
-  className = "",
+  className,
   delay = 0,
-  direction = "up",
-  duration = 600,
-  stagger = false,
+  duration = 0.5,
+  once = true,
+  variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  },
 }: ScrollAnimationProps) {
-  const elementRef = useRef<HTMLDivElement>(null)
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once })
+  const controls = useAnimation()
+  const shouldReduceMotion = useReducedMotion()
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add("animate-in")
-
-              if (stagger) {
-                const children = entry.target.querySelectorAll(".stagger-child")
-                children.forEach((child, index) => {
-                  setTimeout(() => {
-                    child.classList.add("animate-in")
-                  }, index * 100)
-                })
-              }
-            }, delay)
-          }
-        })
-      },
-      {
-        threshold: 0.15,
-        rootMargin: "0px 0px -80px 0px",
-      },
-    )
-
-    if (elementRef.current) {
-      observer.observe(elementRef.current)
+    if (isInView) {
+      controls.start("visible")
     }
+  }, [isInView, controls])
 
-    return () => observer.disconnect()
-  }, [delay, stagger])
-
-  const getAnimationClass = () => {
-    const baseClass = `animate-duration-${duration}`
-    switch (direction) {
-      case "up":
-        return `animate-slide-up ${baseClass}`
-      case "down":
-        return `animate-slide-down ${baseClass}`
-      case "left":
-        return `animate-slide-left ${baseClass}`
-      case "right":
-        return `animate-slide-right ${baseClass}`
-      case "fade":
-        return `animate-fade-in ${baseClass}`
-      case "scale":
-        return `animate-scale-in ${baseClass}`
-      case "rotate":
-        return `animate-rotate-in ${baseClass}`
-      case "bounce":
-        return `animate-bounce-in ${baseClass}`
-      default:
-        return `animate-slide-up ${baseClass}`
-    }
+  if (shouldReduceMotion) {
+    return <div className={className}>{children}</div>
   }
 
   return (
-    <div ref={elementRef} className={`${getAnimationClass()} ${className}`} style={{ animationDelay: `${delay}ms` }}>
+    <motion.div
+      ref={ref}
+      className={className}
+      initial="hidden"
+      animate={controls}
+      variants={variants}
+      transition={{ duration, delay }}
+    >
       {children}
-    </div>
+    </motion.div>
   )
 }

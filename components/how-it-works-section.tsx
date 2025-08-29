@@ -45,7 +45,7 @@ export function HowItWorksSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-medoniq-primary mb-4">How It Works</h2>
           <p className="text-xl text-medoniq-secondary max-w-3xl mx-auto">
-            Get started with Medoniq in just a few simple steps. Your family's health journey begins here.
+            Get started with Medoniq in just a few simple steps. Your family&apos;s health journey begins here.
           </p>
         </div>
 
