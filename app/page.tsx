@@ -8,25 +8,30 @@ import { FAQSection } from "@/components/faq-section"
 import { Footer } from "@/components/footer"
 import { ScrollAnimation } from "@/components/scroll-animation"
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+}
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
         <HeroSection />
-        <ScrollAnimation direction="scale" delay={200} duration={900} stagger>
+        <ScrollAnimation variants={sectionVariants} duration={0.8}>
           <BenefitsSection />
         </ScrollAnimation>
-        <ScrollAnimation direction="fade" delay={300} duration={1200}>
+        <ScrollAnimation variants={sectionVariants} duration={0.8} delay={0.2}>
           <HowItWorksSection />
         </ScrollAnimation>
-        <ScrollAnimation direction="bounce" delay={100} duration={900} stagger>
+        <ScrollAnimation variants={sectionVariants} duration={0.8} delay={0.2}>
           <TestimonialsSection />
         </ScrollAnimation>
-        <ScrollAnimation direction="rotate" delay={200} duration={1200}>
+        <ScrollAnimation variants={sectionVariants} duration={0.8} delay={0.2}>
           <FinalCTASection />
         </ScrollAnimation>
-        <ScrollAnimation direction="scale" delay={150} duration={900}>
+        <ScrollAnimation variants={sectionVariants} duration={0.8} delay={0.2}>
           <FAQSection />
         </ScrollAnimation>
       </main>

@@ -29,7 +29,7 @@ export function FinalCTASection() {
         </div>
 
         {/* Main Headline */}
-        <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">Start Your Family's Health Journey Today</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">Start Your Family&apos;s Health Journey Today</h2>
 
         <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
           Join over 500,000 families who trust Medoniq to keep their loved ones healthy, safe, and connected.

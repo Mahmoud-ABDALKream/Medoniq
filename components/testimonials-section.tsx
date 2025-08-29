@@ -1,6 +1,6 @@
 "use client"
 
-import { Star, Quote, User, Briefcase, TrendingUp, Brain, Code, Users, DollarSign, CheckCircle } from "lucide-react"
+import { Star, Quote, User, Briefcase, TrendingUp, Brain, Code, Users, DollarSign, CheckCircle, Linkedin } from "lucide-react"
 
 const testimonials = [
   {
@@ -64,7 +64,7 @@ export function TestimonialsSection() {
 
               {/* Quote */}
               <blockquote className="text-medoniq-primary mb-6 leading-relaxed italic">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </blockquote>
 
               {/* Author */}
@@ -84,7 +84,7 @@ export function TestimonialsSection() {
         {/* Team Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-medoniq-primary mb-4">Our Expert Team</h2>
-          <p className="text-xl text-medoniq-secondary max-w-3xl mx-auto">Diverse skills driving Medoniq's success</p>
+          <p className="text-xl text-medoniq-secondary max-w-3xl mx-auto">Diverse skills driving Medoniq&apos;s success</p>
         </div>
 
         {/* Team Grid */}
@@ -95,7 +95,14 @@ export function TestimonialsSection() {
               <div className="w-20 h-20 bg-medoniq-light rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-medoniq-primary">
                 <User className="w-10 h-10 text-medoniq-primary" />
               </div>
-              <h3 className="text-xl font-bold text-medoniq-primary mb-2">Mahmoud ABD ELKream</h3>
+              <a
+                href="https://www.linkedin.com/in/mahmoud-ahmed-abdelkream/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-bold text-medoniq-primary mb-2 hover:text-medoniq-accent transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                Mahmoud ABD ELKream <Linkedin className="w-5 h-5" />
+              </a>
               <div className="flex flex-wrap gap-2 justify-center mb-4">
                 <span className="inline-flex items-center gap-1 px-3 py-1 bg-medoniq-primary text-white text-sm rounded-full">
                   <Briefcase className="w-3 h-3" />
@@ -126,7 +133,14 @@ export function TestimonialsSection() {
               <div className="w-20 h-20 bg-medoniq-light rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-medoniq-primary">
                 <User className="w-10 h-10 text-medoniq-primary" />
               </div>
-              <h3 className="text-xl font-bold text-medoniq-primary mb-2">Mohaned Mohamed</h3>
+              <a
+                href="https://www.linkedin.com/in/mohand-abdo-linkedeffe233/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-bold text-medoniq-primary mb-2 hover:text-medoniq-accent transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                Mohaned Mohamed <Linkedin className="w-5 h-5" />
+              </a>
               <div className="flex flex-wrap gap-2 justify-center mb-4">
                 <span className="inline-flex items-center gap-1 px-3 py-1 bg-medoniq-primary text-white text-sm rounded-full">
                   <Code className="w-3 h-3" />
@@ -153,7 +167,14 @@ export function TestimonialsSection() {
               <div className="w-20 h-20 bg-medoniq-light rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-medoniq-primary">
                 <User className="w-10 h-10 text-medoniq-primary" />
               </div>
-              <h3 className="text-xl font-bold text-medoniq-primary mb-2">Yunus ABD Ghaffar</h3>
+              <a
+                href="https://www.linkedin.com/in/yunus-abdelghaffar-49631231a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-bold text-medoniq-primary mb-2 hover:text-medoniq-accent transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                Yunus Abdelghaffar <Linkedin className="w-5 h-5" />
+              </a>
               <div className="flex flex-wrap gap-2 justify-center mb-4">
                 <span className="inline-flex items-center gap-1 px-3 py-1 bg-medoniq-primary text-white text-sm rounded-full">
                   <Briefcase className="w-3 h-3" />
@@ -184,7 +205,14 @@ export function TestimonialsSection() {
               <div className="w-20 h-20 bg-medoniq-light rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-medoniq-primary">
                 <User className="w-10 h-10 text-medoniq-primary" />
               </div>
-              <h3 className="text-xl font-bold text-medoniq-primary mb-2">Mohammed Hassan</h3>
+              <a
+                href="https://www.linkedin.com/in/muhammed-hassan-418b3a2b4/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl font-bold text-medoniq-primary mb-2 hover:text-medoniq-accent transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                Mohammed Hassan <Linkedin className="w-5 h-5" />
+              </a>
               <div className="flex flex-wrap gap-2 justify-center mb-4">
                 <span className="inline-flex items-center gap-1 px-3 py-1 bg-medoniq-primary text-white text-sm rounded-full">
                   <DollarSign className="w-3 h-3" />

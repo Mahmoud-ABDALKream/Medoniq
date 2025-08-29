@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import { TikTokIcon } from "@/components/ui/tiktok-icon"
 
 export function Footer() {
   return (
@@ -18,28 +19,22 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61579766157171"
                 className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
               >
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
-              >
-                <Twitter className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
-              >
-                <Instagram className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
+                href="https://www.linkedin.com/company/medoniq/posts/?feedView=all"
                 className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@medoniq?is_from_webapp=1&sender_device=pc"
+                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
+              >
+                <TikTokIcon className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -77,11 +72,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-blue-100">
                 <Mail className="w-4 h-4" />
-                <span>support@medoniq.com</span>
+                <span>medoniqeg@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-blue-100">
                 <Phone className="w-4 h-4" />
-                <span>1-800-MEDONIQ</span>
+                <span>01555783152</span>
               </li>
               <li className="flex items-center gap-3 text-blue-100">
                 <MapPin className="w-4 h-4" />
@@ -94,7 +89,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-blue-100 text-sm">
-            © 2025 Medoniq. All rights reserved. Your family's health, our priority.
+            © 2025 Medoniq. All rights reserved. Your family&apos;s health, our priority.
           </div>
           <div className="flex gap-6 text-sm">
             <Link href="#" className="text-blue-100 hover:text-white transition-colors duration-200">
