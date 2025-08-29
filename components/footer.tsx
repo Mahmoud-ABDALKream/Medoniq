@@ -11,7 +11,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <Image src="/images/medoniq-logo.png" alt="Medoniq" width={140} height={40} className="h-8 w-auto" />
+              <Image src="/images/medoniq-logo.png" alt="Medoniq" width={160} height={48} className="h-10 w-auto" />
             </div>
             <p className="text-blue-100 mb-6 leading-relaxed max-w-md">
               Medoniq is the smart health assistant that helps families manage medications, store health records, and

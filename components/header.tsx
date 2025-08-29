@@ -18,9 +18,9 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3">
-              <Image src="/images/health-icon.png" alt="Health Icon" width={32} height={32} className="h-8 w-8" />
-              <span className="text-xl font-bold text-medoniq-primary">Medoniq</span>
-              <Image src="/images/medoniq-logo.png" alt="Medoniq" width={140} height={40} className="h-8 w-auto" />
+              <Image src="/images/health-icon.png" alt="Health Icon" width={40} height={40} className="h-10 w-10" />
+              <span className="text-2xl font-bold text-medoniq-primary">Medoniq</span>
+              <Image src="/images/medoniq-logo.png" alt="Medoniq" width={160} height={48} className="h-10 w-auto" />
             </Link>
           </div>
 
