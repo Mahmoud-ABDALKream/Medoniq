@@ -7,39 +7,51 @@ export function Footer() {
   return (
     <footer className="bg-medoniq-primary text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* Logo & Description */}
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
-            <Image src="/images/health-icon.png" alt="Medoniq Logo" width={64} height={64} className="h-16 w-16" />
+            <Image
+              src="/images/health-icon.png"
+              alt="Medoniq Logo"
+              width={80}
+              height={80}
+              className="h-20 w-20 rounded-full shadow-lg ring-2 ring-white/30"
+            />
           </div>
-          <p className="text-blue-100 leading-relaxed max-w-md mx-auto">
-            Medoniq is the smart health assistant that helps families manage medications, store health records, and
-            stay connected for better care coordination.
+          <p className="text-blue-100 leading-relaxed max-w-lg mx-auto text-base">
+            Medoniq is the smart health assistant that helps families manage medications, 
+            store health records, and stay connected for better care coordination.
           </p>
         </div>
 
+        {/* Links */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Quick Links */}
           <div className="lg:col-span-1 lg:text-center">
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#features" className="text-blue-100 hover:text-white transition-colors duration-200">
+                <Link
+                  href="#features"
+                  className="text-blue-100 hover:text-white transition-colors duration-200"
+                >
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="#how-it-works" className="text-blue-100 hover:text-white transition-colors duration-200">
+                <Link
+                  href="#how-it-works"
+                  className="text-blue-100 hover:text-white transition-colors duration-200"
+                >
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link href="#download" className="text-blue-100 hover:text-white transition-colors duration-200">
+                <Link
+                  href="#download"
+                  className="text-blue-100 hover:text-white transition-colors duration-200"
+                >
                   Download
-                </Link>
-              </li>
-              <li>
-                <Link href="#faq" className="text-blue-100 hover:text-white transition-colors duration-200">
-                  FAQ
                 </Link>
               </li>
             </ul>
@@ -47,19 +59,19 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="lg:col-span-1 lg:text-center">
-            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+            <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex items-center lg:justify-center gap-3 text-blue-100">
-                <Mail className="w-4 h-4" />
-                <span>medoniqeg@gmail.com</span>
+              <li className="flex items-center justify-center space-x-2">
+                <Phone size={18} />
+                <span>+20 123 456 7890</span>
               </li>
-              <li className="flex items-center lg:justify-center gap-3 text-blue-100">
-                <Phone className="w-4 h-4" />
-                <span>01555783152</span>
+              <li className="flex items-center justify-center space-x-2">
+                <Mail size={18} />
+                <span>info@medoniq.com</span>
               </li>
-              <li className="flex items-center lg:justify-center gap-3 text-blue-100">
-                <MapPin className="w-4 h-4" />
-                <span>Egypt</span>
+              <li className="flex items-center justify-center space-x-2">
+                <MapPin size={18} />
+                <span>Cairo, Egypt</span>
               </li>
             </ul>
           </div>
@@ -67,45 +79,23 @@ export function Footer() {
           {/* Social Media */}
           <div className="lg:col-span-1 lg:text-center">
             <h3 className="font-semibold text-lg mb-4">Follow Us</h3>
-            <div className="flex gap-4 lg:justify-center">
-              <Link
-                href="https://www.facebook.com/profile.php?id=61579766157171"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
-              >
-                <Facebook className="w-5 h-5" />
+            <div className="flex justify-center space-x-6">
+              <Link href="https://facebook.com" target="_blank">
+                <Facebook className="hover:text-blue-400 transition-colors" />
               </Link>
-              <Link
-                href="https://www.linkedin.com/company/medoniq/posts/?feedView=all"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
-              >
-                <Linkedin className="w-5 h-5" />
+              <Link href="https://linkedin.com" target="_blank">
+                <Linkedin className="hover:text-blue-400 transition-colors" />
               </Link>
-              <Link
-                href="https://www.tiktok.com/@medoniq?is_from_webapp=1&sender_device=pc"
-                className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors duration-200"
-              >
-                <TikTokIcon className="w-5 h-5" />
+              <Link href="https://tiktok.com" target="_blank">
+                <TikTokIcon className="hover:text-blue-400 transition-colors" />
               </Link>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-blue-100 text-sm">
-            © 2025 Medoniq. All rights reserved. Your family&apos;s health, our priority.
-          </div>
-          <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-blue-100 hover:text-white transition-colors duration-200">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-blue-100 hover:text-white transition-colors duration-200">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-blue-100 hover:text-white transition-colors duration-200">
-              HIPAA Notice
-            </Link>
-          </div>
+        {/* Bottom Footer */}
+        <div className="mt-12 text-center text-sm text-blue-200">
+          © {new Date().getFullYear()} Medoniq. All rights reserved.
         </div>
       </div>
     </footer>
