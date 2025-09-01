@@ -11,7 +11,7 @@ export function Footer() {
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <Image
-              src="/images/health-icon.png"
+              src="/images/medoniq-logo.png"
               alt="Medoniq Logo"
               width={80}
               height={80}
