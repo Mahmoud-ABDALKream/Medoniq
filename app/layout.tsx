@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/health-icon.png",
-        width: 1000,
-        height: 800,
+        width: 1400,
+        height: 1200,
         alt: "Medoniq Logo",
       },
     ],
