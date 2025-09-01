@@ -18,7 +18,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/images/health-icon.png" alt="Medoniq Logo" width={42} height={42} className="h-10 w-10" />
+              <Image src="/images/health-icon.png" alt="Medoniq Logo" width={52} height={52} className="h-16 w-16" />
               <span className="text-2xl font-bold text-medoniq-primary">Medoniq</span>
             </Link>
           </div>
