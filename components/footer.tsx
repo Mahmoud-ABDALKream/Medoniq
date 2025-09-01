@@ -9,7 +9,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
-            <Image src="/images/medoniq-logo.png" alt="Medoniq Logo" width={42} height={42} className="h-10 w-10" />
+            <Image src="/images/medoniq-logo.png" alt="Medoniq Logo" width={80} height={80} className="h-10 w-10" />
           </div>
           <p className="text-blue-100 leading-relaxed max-w-md mx-auto">
             Medoniq is the smart health assistant that helps families manage medications, store health records, and
