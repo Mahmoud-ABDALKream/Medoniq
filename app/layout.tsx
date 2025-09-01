@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
     description:
       "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
-    url: "https://www.medoniq.com",
+    url: "https://medoniqeg.vercel.app",
     siteName: "Medoniq",
     images: [
       {
         url: "/images/health-icon.png",
-        width: 800,
-        height: 600,
+        width: 1000,
+        height: 800,
         alt: "Medoniq Logo",
       },
     ],
