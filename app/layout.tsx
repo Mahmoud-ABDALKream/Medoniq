@@ -13,10 +13,12 @@ export const metadata: Metadata = {
   title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
   description:
     "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
-  keywords: "رعاية صحية, أطباء, مستشفيات, أدوية, عيادات, حجز مواعيد, أونلاين, مصر, healthcare Egypt, doctors, hospitals, medicine",
+  keywords:
+    "رعاية صحية, أطباء, مستشفيات, أدوية, عيادات, حجز مواعيد, أونلاين, مصر, healthcare Egypt, doctors, hospitals, medicine",
   openGraph: {
     title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
-    description: "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+    description:
+      "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
     url: "https://www.medoniq.com",
     siteName: "Medoniq",
     images: [
@@ -33,8 +35,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
-    description: "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+    description:
+      "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
     images: ["/images/health-icon.png"],
+  },
+  icons: {
+    icon: "/images/medoniq logo.ico", 
   },
 }
 
@@ -46,12 +52,13 @@ const schema = {
       "name": "Medoniq",
       "url": "https://www.medoniq.com",
       "logo": "https://www.medoniq.com/images/health-icon.png",
-      "description": "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+      "description":
+        "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+20-1555783152",
-        "contactType": "Customer Service"
-      }
+        "contactType": "Customer Service",
+      },
     },
     {
       "@type": "WebSite",
@@ -59,11 +66,11 @@ const schema = {
       "name": "Medoniq",
       "publisher": {
         "@type": "MedicalOrganization",
-        "name": "Medoniq"
-      }
-    }
-  ]
-};
+        "name": "Medoniq",
+      },
+    },
+  ],
+}
 
 export default function RootLayout({
   children,
