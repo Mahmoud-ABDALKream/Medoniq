@@ -10,11 +10,60 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Medoniq - Your Family's Health, Harmony at Last",
+  title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
   description:
-    "Medoniq is the smart assistant that manages medications, stores health records, and connects your family for simpler, safer care.",
-  generator: "v0.app",
+    "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+  keywords: "رعاية صحية, أطباء, مستشفيات, أدوية, عيادات, حجز مواعيد, أونلاين, مصر, healthcare Egypt, doctors, hospitals, medicine",
+  openGraph: {
+    title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
+    description: "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+    url: "https://www.medoniq.com",
+    siteName: "Medoniq",
+    images: [
+      {
+        url: "/images/health-icon.png",
+        width: 800,
+        height: 600,
+        alt: "Medoniq Logo",
+      },
+    ],
+    locale: "ar_EG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
+    description: "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+    images: ["/images/health-icon.png"],
+  },
 }
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalOrganization",
+      "name": "Medoniq",
+      "url": "https://www.medoniq.com",
+      "logo": "https://www.medoniq.com/images/health-icon.png",
+      "description": "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+20-1555783152",
+        "contactType": "Customer Service"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://www.medoniq.com",
+      "name": "Medoniq",
+      "publisher": {
+        "@type": "MedicalOrganization",
+        "name": "Medoniq"
+      }
+    }
+  ]
+};
 
 export default function RootLayout({
   children,
@@ -22,7 +71,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="ar-EG">
       <head>
         <style>{`
 html {
@@ -31,6 +80,10 @@ html {
   --font-serif: ${inter.variable};
 }
         `}</style>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
