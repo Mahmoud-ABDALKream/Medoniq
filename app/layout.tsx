@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ["/images/health-icon.png"],
   },
   icons: {
-    icon: "/images/medoniq logo.ico", 
+    icon: "/images/download.ico", 
   },
 }
 
