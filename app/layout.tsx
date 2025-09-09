@@ -40,8 +40,17 @@ export const metadata: Metadata = {
     images: ["/images/health-icon.png"],
   },
   icons: {
-    icon: "/images/medoniq.ico", 
-  },
+  icon: [
+    { url: "/images/medoniq%20(2).PNG", sizes: "32x32", type: "image/png" },
+    { url: "/images/medoniq%20(2).PNG", sizes: "48x48", type: "image/png" },
+    { url: "/images/medoniq%20(2).PNG", sizes: "64x64", type: "image/png" },
+    { url: "/images/medoniq%20(2).PNG", sizes: "180x180", type: "image/png" },
+    { url: "/images/medoniq%20(2).PNG", sizes: "192x192", type: "image/png" },
+    { url: "/images/medoniq%20(2).PNG", sizes: "512x512", type: "image/png" },
+  ],
+  shortcut: { url: "/images/medoniq%20(2).PNG", type: "image/png" },
+  apple: { url: "/images/medoniq%20(2).PNG", type: "image/png" },
+},
 }
 
 const schema = {
