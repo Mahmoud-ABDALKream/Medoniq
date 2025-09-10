@@ -32,7 +32,7 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-              <a href="/medoniq.apk" download="medoniq.apk">
+              <a href="public/medoniq.apk" download="medoniq.apk">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-medoniq-primary to-medoniq-accent hover:from-medoniq-primary/90 hover:to-medoniq-accent/90 text-white px-8 py-4 rounded-xl flex items-center gap-3 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg border-0 relative overflow-hidden group"
