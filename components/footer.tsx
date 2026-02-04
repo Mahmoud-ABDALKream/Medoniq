@@ -3,12 +3,6 @@ import Link from "next/link"
 import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react"
 import { TikTokIcon } from "@/components/ui/tiktok-icon"
 
-interface FooterLinkProps {
-  href: string
-  children: React.ReactNode
-  className?: string
-}
-
 export function Footer() {
   return (
     <footer className="bg-medoniq-primary text-white">
