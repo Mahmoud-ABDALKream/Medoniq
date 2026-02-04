@@ -103,7 +103,12 @@ export function HowItWorksSection() {
               Join thousands of families who trust Medoniq for their health management needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-medoniq-accent hover:bg-medoniq-primary text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+              <button
+                className="bg-medoniq-accent hover:bg-medoniq-primary text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
                 <Download size={20} />
                 Download APK
               </button>

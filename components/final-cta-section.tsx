@@ -40,13 +40,8 @@ export function FinalCTASection() {
           <Button
             size="lg"
             className="bg-white hover:bg-gray-100 text-medoniq-primary px-12 py-6 rounded-xl flex items-center gap-4 font-bold text-lg transition-all duration-200 hover:scale-105 shadow-lg"
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = '/medoniq.apk';
-              link.download = 'medoniq.apk';
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
+            onClick={(e) => {
+              e.preventDefault();
             }}
           >
             <Download size={32} />
