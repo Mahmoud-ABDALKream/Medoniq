@@ -37,19 +37,21 @@ export function FinalCTASection() {
 
         {/* App Store Buttons */}
         <div className="flex justify-center mb-12">
-          <Button
-            size="lg"
-            className="bg-white hover:bg-gray-100 text-medoniq-primary px-12 py-6 rounded-xl flex items-center gap-4 font-bold text-lg transition-all duration-200 hover:scale-105 shadow-lg"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
+          <a
+            href="/medoniq.apk"
+            download="medoniq.apk"
           >
-            <Download size={32} />
-            <div className="text-left">
-              <div className="text-sm font-medium">Download</div>
-              <div className="text-xl font-bold">Medoniq APK</div>
-            </div>
-          </Button>
+            <Button
+              size="lg"
+              className="bg-white hover:bg-gray-100 text-medoniq-primary px-12 py-6 rounded-xl flex items-center gap-4 font-bold text-lg transition-all duration-200 hover:scale-105 shadow-lg cursor-pointer"
+            >
+              <Download size={32} />
+              <div className="text-left">
+                <div className="text-sm font-medium">Download</div>
+                <div className="text-xl font-bold">Medoniq APK</div>
+              </div>
+            </Button>
+          </a>
         </div>
 
         {/* Trust Badges */}
