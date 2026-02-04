@@ -32,17 +32,19 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-medoniq-primary to-medoniq-accent hover:from-medoniq-primary/90 hover:to-medoniq-accent/90 text-white px-8 py-4 rounded-xl flex items-center gap-3 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg border-0 relative overflow-hidden group"
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
+              <a
+                href="/api/download?file=medoniq.apk"
+                download="medoniq.apk"
               >
-                <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
-                <Download size={22} className="relative z-10" />
-                <span className="text-base relative z-10">Download Medoniq APK</span>
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-medoniq-primary to-medoniq-accent hover:from-medoniq-primary/90 hover:to-medoniq-accent/90 text-white px-8 py-4 rounded-xl flex items-center gap-3 font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl shadow-lg border-0 relative overflow-hidden group cursor-pointer"
+                >
+                  <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
+                  <Download size={22} className="relative z-10" />
+                  <span className="text-base relative z-10">Download Medoniq APK</span>
+                </Button>
+              </a>
            </div>
 
 

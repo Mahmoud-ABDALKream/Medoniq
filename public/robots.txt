@@ -1,0 +1,24 @@
+# Medoniq Robots.txt
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+Allow: /api/download
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /__nextjs_original-stack-frame
+
+# Crawl delay for search engines
+Crawl-delay: 1
+
+# Allow specific search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://medoniqeg.vercel.app/sitemap.xml

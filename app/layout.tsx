@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
@@ -9,12 +9,27 @@ const inter = Inter({
   variable: "--font-inter",
 })
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' },
+  ],
+}
+
 export const metadata: Metadata = {
   title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
   description:
     "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
   keywords:
     "رعاية صحية, أطباء, مستشفيات, أدوية, عيادات, حجز مواعيد, أونلاين, مصر, healthcare Egypt, doctors, hospitals, medicine",
+  authors: [{ name: 'Medoniq Team' }],
+  creator: 'Medoniq',
+  publisher: 'Medoniq',
+  robots: 'index, follow',
   openGraph: {
     title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
     description:
@@ -40,17 +55,17 @@ export const metadata: Metadata = {
     images: ["/images/health-icon.png"],
   },
   icons: {
-  icon: [
-    { url: "/images/medoniq%20(2).PNG", sizes: "32x32", type: "image/png" },
-    { url: "/images/medoniq%20(2).PNG", sizes: "48x48", type: "image/png" },
-    { url: "/images/medoniq%20(2).PNG", sizes: "64x64", type: "image/png" },
-    { url: "/images/medoniq%20(2).PNG", sizes: "180x180", type: "image/png" },
-    { url: "/images/medoniq%20(2).PNG", sizes: "192x192", type: "image/png" },
-    { url: "/images/medoniq%20(2).PNG", sizes: "512x512", type: "image/png" },
-  ],
-  shortcut: { url: "/images/medoniq%20(2).PNG", type: "image/png" },
-  apple: { url: "/images/medoniq%20(2).PNG", type: "image/png" },
-},
+    icon: [
+      { url: "/images/medoniq%20(2).PNG", sizes: "32x32", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG", sizes: "48x48", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG", sizes: "64x64", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG", sizes: "180x180", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG", sizes: "192x192", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: { url: "/images/medoniq%20(2).PNG", type: "image/png" },
+    apple: { url: "/images/medoniq%20(2).PNG", type: "image/png" },
+  },
 }
 
 const schema = {
