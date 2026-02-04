@@ -43,12 +43,14 @@ export function Header() {
             >
               How It Works
             </Link>
-            <Link
-              href="#download"
+            {/* Changed to anchor that downloads the APK */}
+            <a
+              href="/medoniq.apk"
+              download
               className="text-medoniq-primary hover:text-medoniq-accent transition-colors duration-200 font-medium"
             >
               Download APK
-            </Link>
+            </a>
             <Link
               href="#faq"
               className="text-medoniq-primary hover:text-medoniq-accent transition-colors duration-200 font-medium"
@@ -63,7 +65,10 @@ export function Header() {
               className="bg-medoniq-accent hover:bg-medoniq-primary text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-200"
               asChild
             >
-              <Link href="#download">Download APK</Link>
+              {/* changed from <Link href="#download"> to an anchor that downloads the file */}
+              <a href="/medoniq.apk" download>
+                Download APK
+              </a>
             </Button>
           </div>
 
@@ -104,13 +109,15 @@ export function Header() {
               >
                 How It Works
               </Link>
-              <Link
-                href="#download"
+              {/* Mobile download anchor: downloads and closes the menu */}
+              <a
+                href="/medoniq.apk"
+                download
                 className="block px-3 py-2 text-medoniq-primary hover:text-medoniq-accent hover:bg-medoniq-light rounded-md transition-colors duration-200 font-medium"
                 onClick={toggleMenu}
               >
                 Download APK
-              </Link>
+              </a>
               <Link
                 href="#faq"
                 className="block px-3 py-2 text-medoniq-primary hover:text-medoniq-accent hover:bg-medoniq-light rounded-md transition-colors duration-200 font-medium"
@@ -123,9 +130,14 @@ export function Header() {
                   className="w-full bg-medoniq-accent hover:bg-medoniq-primary text-white font-semibold py-2 rounded-lg transition-colors duration-200"
                   asChild
                 >
-                  <Link href="#download" onClick={toggleMenu}>
+                  {/* changed from Link to anchor; call toggleMenu as well so the menu closes */}
+                  <a
+                    href="/medoniq.apk"
+                    download
+                    onClick={toggleMenu}
+                  >
                     Download APK
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
