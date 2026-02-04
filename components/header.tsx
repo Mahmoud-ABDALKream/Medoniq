@@ -44,7 +44,7 @@ export function Header() {
               How It Works
             </Link>
             <a
-              href="/api/download?file=medoniq.apk"
+              href="/medoniq.apk"
               download="medoniq.apk"
               className="text-medoniq-primary hover:text-medoniq-accent transition-colors duration-200 font-medium"
             >
@@ -64,7 +64,7 @@ export function Header() {
               className="bg-medoniq-accent hover:bg-medoniq-primary text-white font-semibold px-6 py-2 rounded-lg transition-colors duration-200"
               asChild
             >
-              <a href="/api/download?file=medoniq.apk" download="medoniq.apk">
+              <a href="/medoniq.apk" download="medoniq.apk">
                 Download APK
               </a>
             </Button>
@@ -108,7 +108,7 @@ export function Header() {
                 How It Works
               </Link>
               <a
-                href="/api/download?file=medoniq.apk"
+                href="/medoniq.apk"
                 download="medoniq.apk"
                 className="block px-3 py-2 text-medoniq-primary hover:text-medoniq-accent hover:bg-medoniq-light rounded-md transition-colors duration-200 font-medium"
                 onClick={toggleMenu}
@@ -128,7 +128,7 @@ export function Header() {
                   asChild
                 >
                   <a
-                    href="/api/download?file=medoniq.apk"
+                    href="/medoniq.apk"
                     download="medoniq.apk"
                     onClick={toggleMenu}
                   >

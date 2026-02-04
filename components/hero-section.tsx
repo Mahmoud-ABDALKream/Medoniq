@@ -33,7 +33,7 @@ export function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
               <a
-                href="/api/download?file=medoniq.apk"
+                href="/medoniq.apk"
                 download="medoniq.apk"
               >
                 <Button

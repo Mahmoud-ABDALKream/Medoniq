@@ -38,7 +38,7 @@ export function FinalCTASection() {
         {/* App Store Buttons */}
         <div className="flex justify-center mb-12">
           <a
-            href="/api/download?file=medoniq.apk"
+            href="/medoniq.apk"
             download="medoniq.apk"
           >
             <Button
