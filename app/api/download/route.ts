@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+export const dynamic = 'force-static'
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url)
@@ -15,7 +17,13 @@ export async function GET(request: NextRequest) {
 
     // For Vercel: Redirect to the public file directly
     // Vercel serves /public files at the root path
-    const fileUrl = `${process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'}/${fileName}`
+    const baseUrl = process.env.VERCEL_URL 
+      ? `https://${process.env.VERCEL_URL}` 
+      : process.env.NEXTAUTH_URL 
+      ? process.env.NEXTAUTH_URL
+      : 'http://localhost:3000'
+    
+    const fileUrl = `${baseUrl}/${fileName}`
     
     // Return a redirect to the static file
     return NextResponse.redirect(fileUrl, {

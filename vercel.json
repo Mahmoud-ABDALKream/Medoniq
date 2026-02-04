@@ -1,7 +1,4 @@
 {
-  "env": {
-    "NEXT_PUBLIC_SITE_URL": "@medoniq_site_url"
-  },
   "headers": [
     {
       "source": "/medoniq.apk",

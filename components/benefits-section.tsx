@@ -1,8 +1,16 @@
 "use client"
 
-import { Bell, FileText, Users, Brain } from "lucide-react"
+import { Bell, FileText, Users, Brain, LucideIcon } from "lucide-react"
 
-const benefits = [
+interface BenefitItem {
+  icon: LucideIcon
+  title: string
+  description: string
+  color: string
+  bgColor: string
+}
+
+const benefits: BenefitItem[] = [
   {
     icon: Bell,
     title: "Never Miss a Dose",
