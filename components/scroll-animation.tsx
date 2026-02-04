@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useAnimation, useInView, useReducedMotion } from "framer-motion"
+import { motion, useAnimation, useInView, useReducedMotion, type Variants } from "framer-motion"
 import { useEffect, useRef, type ReactNode } from "react"
 
 interface ScrollAnimationProps {
@@ -9,10 +9,7 @@ interface ScrollAnimationProps {
   delay?: number
   duration?: number
   once?: boolean
-  variants?: {
-    hidden: Record<string, unknown>
-    visible: Record<string, unknown>
-  }
+  variants?: Variants
 }
 
 export function ScrollAnimation({
