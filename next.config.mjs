@@ -1,32 +1,24 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   images: {
-    unoptimized: true,
+    unoptimized: false,
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**',
       },
     ],
+    formats: ['image/avif', 'image/webp'],
   },
-  // Optimize for Vercel
   headers: async () => {
     return [
-      {
-        source: '/public/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
       {
         source: '/medoniq.apk',
         headers: [
@@ -38,16 +30,35 @@ const nextConfig = {
             key: 'Content-Disposition',
             value: 'attachment; filename="medoniq.apk"',
           },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/api/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, no-cache, must-revalidate',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
         ],
       },
     ]
   },
-  swcMinify: true,
   compress: true,
   poweredByHeader: false,
-  // Production optimizations
   productionBrowserSourceMaps: false,
-  optimizeFonts: true,
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
