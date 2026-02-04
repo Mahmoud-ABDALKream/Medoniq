@@ -47,6 +47,5 @@
   ],
   "buildCommand": "next build",
   "outputDirectory": ".next",
-  "framework": "nextjs",
-  "nodeVersion": "20.x"
+  "framework": "nextjs"
 }
