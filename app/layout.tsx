@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Medoniq",
     images: [
       {
-        url: "/images/health-icon.png",
+        url: "/images/health-icon.png?v=5",
         width: 1400,
         height: 1200,
         alt: "Medoniq Logo",
@@ -52,20 +52,20 @@ export const metadata: Metadata = {
     title: "Medoniq | المنصة الذكية للرعاية الصحية في مصر",
     description:
       "Medoniq منصة رعاية صحية ذكية بتسهّل التواصل بين الأطباء والمرضى، وتوفر حجز مواعيد، تذكيرات تلقائية، وخدمات موثوقة. ابحث عن أطباء، مستشفيات، أدوية بسهولة في مصر.",
-    images: ["/images/health-icon.png"],
+    images: ["/images/health-icon.png?v=5"],
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=3" },
-      { url: "/images/medoniq%20(2).PNG?v=3", sizes: "32x32", type: "image/png" },
-      { url: "/images/medoniq%20(2).PNG?v=3", sizes: "48x48", type: "image/png" },
-      { url: "/images/medoniq%20(2).PNG?v=3", sizes: "64x64", type: "image/png" },
-      { url: "/images/medoniq%20(2).PNG?v=3", sizes: "180x180", type: "image/png" },
-      { url: "/images/medoniq%20(2).PNG?v=3", sizes: "192x192", type: "image/png" },
-      { url: "/images/medoniq%20(2).PNG?v=3", sizes: "512x512", type: "image/png" },
+      { url: "/favicon.ico?v=5" },
+      { url: "/images/medoniq%20(2).PNG?v=5", sizes: "32x32", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG?v=5", sizes: "48x48", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG?v=5", sizes: "64x64", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG?v=5", sizes: "180x180", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG?v=5", sizes: "192x192", type: "image/png" },
+      { url: "/images/medoniq%20(2).PNG?v=5", sizes: "512x512", type: "image/png" },
     ],
-    shortcut: { url: "/favicon.ico?v=3" },
-    apple: { url: "/images/medoniq%20(2).PNG?v=3", type: "image/png" },
+    shortcut: { url: "/favicon.ico?v=5" },
+    apple: { url: "/images/medoniq%20(2).PNG?v=5", type: "image/png" },
   },
 }
 

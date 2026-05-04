@@ -36,7 +36,7 @@ export function PhoneMockup() {
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-medoniq-accent rounded-full flex items-center justify-center">
                     <Image
-                      src="/images/health-icon.png"
+                      src="/images/health-icon.png?v=5"
                       alt="Medication"
                       width={24}
                       height={24}
